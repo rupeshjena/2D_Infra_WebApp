@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navbar Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: white;
+            padding: 10px 20px;
+        }
+        .navbar-brand img {
+            height: 40px; /* Adjust logo size */
+        }
+        .nav-link {
+            color: black;
+            font-size: 18px !important;
+            margin-right: 15px;
+            font-weight: 500 !important;
+        }
+        .nav-link:hover {
+            color: #6a1b9a; /* Purple hover effect */
+        }
+        .contact-btn {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .contact-btn:hover {
+            background-color: #5a1488;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="../Assets/images/logo.png" alt="Company Logo"> <!-- Replace with actual logo path -->
+        </a>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Button -->
+        <div>
+            <a href="#" class="contact-btn">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - 2D Infra</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+    position: relative;
+    background: url('../Assets/images/privacybg.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 334px;
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    flex-direction: column; /* Align text vertically */
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0; /* Ensure the overlay is behind the text */
+}
+
+.header h1,
+.header p {
+    position: relative;
+    z-index: 1; /* Ensure text is above the overlay */
+}
+
+        .contact-section {
+            padding: 50px 0;
+        }
+        .contact-card {
+            background: white;
+            box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+        }
+       
+        .contactheading{color: #152026;font-size:36px;font-weight: 700;
+        }
+        .contactsubheading{color: #152026;font-size:16px;font-weight: 400;    margin-bottom: 30px;
+            margin-top: 30px;}
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .contact-text {
+            font-size: 16px;
+            color: #6a1b9a;
+        }
+        .contact-title {
+           font-size: 16px;
+           font-weight: 400;
+           color: #6a1b9a;
+        }
+        .textfield{border-radius: 7px;}
+    </style>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Contact Us</h1>
+        <p>Home / <span style="color: #D4632E;
+">Contact Us</span></p>
+    </div>
+    
+    <!-- Contact Section -->
+    <div class="container contact-section">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="contactheading">Let's talk with us</h2>
+                <p class="contactsubheading">Questions, comments, or suggestions? Simply fill in the form and we'll be in touch shortly.</p>
+
+                <div class="contact-info">
+                    <img src="../Assets/images/phoneicon2.svg" alt="phone" >
+                    <div>
+                        <div class="contact-title">Phone</div>
+                        <div class="contact-text">+91 9692127100 / +91 9114157260</div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <img src="../Assets/images/mailicon2.svg" alt="mail" >
+                    <div>
+                        <div class="contact-title">EMAIL</div>
+                        <div class="contact-text">info@2dinfra.in</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-card">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control textfield" placeholder="First Name*" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control textfield" placeholder="Last Name*" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control textfield" placeholder="Email*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control textfield" placeholder="Phone Number*" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control textfield" rows="3" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" style="background-color: #6a1b9a; border: none;border-radius: 20px;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Footer Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .footer {
+            /* background-color: #1e2a32;
+            color: white;
+            padding: 40px 0;
+            font-size: 14px; */
+
+
+            position: relative;
+            background: url('../Assets/images/footerbg.png') no-repeat center center/cover;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #f39c12;
+        }
+        .footer-logo {
+            max-width: 150px;
+        }
+        .footer-title {
+            font-weight: 500;
+            font-size: 19px;
+        }
+        .footer-address {
+            font-style: italic;
+            font-size: 16px;
+        }
+        .contact-btn2 {
+            background-color: #D4632E;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: 400;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .contact-btn2:hover {
+            background-color: #D4632E;
+        
+        }
+        .divider {
+            border-top: 1px dashed #aaa;
+            margin: 20px 0;
+        }
+        .copyright {
+            text-align: center;
+            font-size: 16px;
+            font-style: italic;
+        }
+        .footerparagraph {
+            text-align: center;
+            font-size: 15px;
+           font-weight: 400;
+        }
+
+        .footercontact-section {
+           
+            /* color: white; */
+            /* padding: 20px;
+            border-radius: 10px; */
+            text-align: left;
+            /* max-width: 350px; */
+        }
+        .footercontact-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .footercontact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+        .footercontact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .footercontact-text {
+            font-size: 16px;
+            color: #fff;
+        }
+        .footercontact-title {
+           font-size: 16px;
+           font-weight: 400;
+           color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-md-4">
+                <img src="../Assets/images/footerlogo.svg" alt="2D Infra Logo" class="footer-logo mb-3"> <!-- Replace with actual logo -->
+                <p class="footer-title">Reshaping Tomorrow Together</p>
+                <p class="footer-address">
+                    Plot No – AE-28, Archana Enclave, Panchasakha Nagar, Jagamara,
+                    Bhubaneswar, Khordha, India, 751019
+                </p>
+            </div>
+
+            <!-- Center Section -->
+            <div class="col-md-4 text-center">
+                <p class="footer-title">Quick Links</p>
+                <p><a href="#">About</a></p>
+                <p><a href="#">Contact</a></p>
+                <p><a href="#">Services</a></p>
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-md-4 text-end">
+
+                <div class="footercontact-section">
+                    <!-- Phone -->
+                    <div class="footercontact-info">
+                        <img src="../Assets/images/footerphoneicon.svg" alt="phone" >
+                        <div>
+                            <div class="footercontact-title">PHONE</div>
+                            <div class="footercontact-text">+91 9692127100 / +91 9114157260</div>
+                        </div>
+                    </div>
+                    <div class="footercontact-info">
+                        <img src="../Assets/images/footeremailicon.svg" alt="phone" >
+                        <div>
+                            <div class="footercontact-title">EMAIL</div>
+                            <div class="footercontact-text">info@twodinfra.in</div>
+                        </div>
+                    </div>
+                <button href="#" class="contact-btn2">  <img src="../Assets/images/footercontacticon.svg" alt="phone" >&nbsp;&nbsp;Contact Us</button>
+            </div>
+        </div>
+
+        <p class="footerparagraph">
+            Terms And Conditions | Privacy Policy
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="copyright">
+            Copyright © 2025 All Rights Reserved By <strong>2D INFRA</strong>
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
